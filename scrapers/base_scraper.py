@@ -4,7 +4,7 @@ from selenium.webdriver.support import expected_conditions
 
 class BaseScraper:
     def __init__(self, timeout=10):
-        self.driver = webdriver.Chrome
+        self.driver = webdriver.Chrome()
         self.driver.maximize_window()
         self.wait = WebDriverWait(self.driver,timeout)
 
