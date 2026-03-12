@@ -69,7 +69,7 @@ class TrendyolScraper(BaseScraper):
                      "link": product_link
                 }
                 scraped_data.append(item)
-                print(f"Ürün:{product_name}, Fiyat: {product_price}, image link: {product_img}, product link: {product_link}")
+
             except Exception as e:
                 continue
 
